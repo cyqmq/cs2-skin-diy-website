@@ -1,0 +1,257 @@
+{
+  "asset": {
+    "copyright": "",
+    "generator": "Source 2 Viewer 19.2.0.0 - https://valveresourceformat.github.io",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3557,
+      "max": [
+        1.1604995727539062,
+        0.18402189016342163,
+        8.964921951293945
+      ],
+      "min": [
+        -1.1965469121932983,
+        -0.1700815111398697,
+        -3.786829948425293
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3557,
+      "max": [
+        0.9956053495407104,
+        0.9965819120407104
+      ],
+      "min": [
+        0.010101626627147198,
+        0.004608294926583767
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3557,
+      "max": [
+        0.9999957084655762,
+        0.9999990463256836,
+        0.9999951720237732
+      ],
+      "min": [
+        -0.9999957084655762,
+        -0.9999957084655762,
+        -0.9999903440475464
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 3557,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 3557,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 3557,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5125,
+      "count": 13098,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 42684,
+      "byteOffset": 166216,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 28456,
+      "byteOffset": 251584,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 42684,
+      "byteOffset": 208900,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 56912,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 28456,
+      "byteOffset": 280040,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 56912,
+      "byteOffset": 56912,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 52392,
+      "byteOffset": 113824,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 308496,
+      "uri": "weapon_knife_skeleton.bin"
+    }
+  ],
+  "materials": [
+    {
+      "extras": {
+        "vmat": {
+          "Name": "weapons/models/knife/knife_skeleton/materials/weapon_knife_skeleton.vmat",
+          "ShaderName": "csgo_weapon.vfx",
+          "IntParams": {
+            "g_bFogEnabled": 1,
+            "g_nScaleTexCoordUByModelScaleAxis": 0,
+            "g_nScaleTexCoordVByModelScaleAxis": 0,
+            "g_nTextureAddressModeU": 0,
+            "g_nTextureAddressModeV": 0
+          },
+          "FloatParams": {
+            "g_flMetalnessTransitionBias": 2,
+            "g_flModelTintAmount": 1,
+            "g_flTexCoordRotation": 0
+          },
+          "VectorParams": {
+            "g_vColorTint": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "g_vMetalnessRemapRange": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "g_vRoughnessAdjustBrightnessContrast": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "g_vTexCoordCenter": [
+              0.5,
+              0.5,
+              0,
+              0
+            ],
+            "g_vTexCoordOffset": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "g_vTexCoordScale": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "g_vTexCoordScrollSpeed": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "TextureParams": {
+            "g_tAmbientOcclusion": "materials/models/weapons/v_models/knife_skeleton/knife_skeleton_ao_psd_16e197dd.vtex",
+            "g_tColor": "materials/models/weapons/v_models/knife_skeleton/knife_skeleton_color_psd_b6b3dcd3.vtex",
+            "g_tMetalness": "materials/models/weapons/v_models/knife_skeleton/knife_skeleton_rough_psd_21feb3ec.vtex",
+            "g_tNormal": "materials/default/default_normal_tga_4fc2d3dd.vtex"
+          }
+        }
+      },
+      "name": "weapon_knife_skeleton"
+    }
+  ],
+  "meshes": [
+    {
+      "extras": {},
+      "name": "weapons\\models\\knife\\knife_skeleton\\weapon_knife_skeleton.vmdl_c.body_legacy",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1,
+            "NORMAL": 2,
+            "TANGENT": 3,
+            "JOINTS_0": 4,
+            "WEIGHTS_0": 5
+          },
+          "indices": 6,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "weapons\\models\\knife\\knife_skeleton\\weapon_knife_skeleton.vmdl_c.body_legacy",
+      "matrix": [
+        3.027916e-09,
+        0,
+        0.025399996,
+        0,
+        0.025399996,
+        3.027916e-09,
+        0,
+        0,
+        0,
+        0.025399996,
+        3.027916e-09,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "weapon_knife_skeleton.vmdl_c",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsUsed": [],
+  "images": [],
+  "textures": []
+}

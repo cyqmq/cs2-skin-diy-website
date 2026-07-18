@@ -1,0 +1,257 @@
+{
+  "asset": {
+    "copyright": "",
+    "generator": "Source 2 Viewer 19.2.0.0 - https://valveresourceformat.github.io",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 3736,
+      "max": [
+        1.2866506576538086,
+        0.45890527963638306,
+        9.758506774902344
+      ],
+      "min": [
+        -1.597839117050171,
+        -0.4664729833602905,
+        -5.041885852813721
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3736,
+      "max": [
+        0.9960936307907104,
+        0.9902340769767761
+      ],
+      "min": [
+        0.008362071588635445,
+        0.008117923513054848
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3736,
+      "max": [
+        0.9994449615478516,
+        0.9999995231628418,
+        0.9999402761459351
+      ],
+      "min": [
+        -0.9999995231628418,
+        -0.9999995231628418,
+        -0.999927282333374
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 3736,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 3736,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 3736,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5125,
+      "count": 15351,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 44832,
+      "byteOffset": 180956,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 29888,
+      "byteOffset": 270620,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 44832,
+      "byteOffset": 225788,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 59776,
+      "byteOffset": 61404,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 29888,
+      "byteOffset": 300508,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 59776,
+      "byteOffset": 121180,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 61404,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 330396,
+      "uri": "weapon_knife_ursus.bin"
+    }
+  ],
+  "materials": [
+    {
+      "extras": {
+        "vmat": {
+          "Name": "weapons/models/knife/knife_ursus/materials/weapon_knife_ursus.vmat",
+          "ShaderName": "csgo_weapon.vfx",
+          "IntParams": {
+            "g_bFogEnabled": 1,
+            "g_nScaleTexCoordUByModelScaleAxis": 0,
+            "g_nScaleTexCoordVByModelScaleAxis": 0,
+            "g_nTextureAddressModeU": 0,
+            "g_nTextureAddressModeV": 0
+          },
+          "FloatParams": {
+            "g_flMetalnessTransitionBias": 2,
+            "g_flModelTintAmount": 1,
+            "g_flTexCoordRotation": 0
+          },
+          "VectorParams": {
+            "g_vColorTint": [
+              1,
+              1,
+              1,
+              0
+            ],
+            "g_vMetalnessRemapRange": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "g_vRoughnessAdjustBrightnessContrast": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "g_vTexCoordCenter": [
+              0.5,
+              0.5,
+              0,
+              0
+            ],
+            "g_vTexCoordOffset": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "g_vTexCoordScale": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "g_vTexCoordScrollSpeed": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          "TextureParams": {
+            "g_tAmbientOcclusion": "materials/models/weapons/v_models/knife_ursus/knife_ursus_ao_psd_c822f961.vtex",
+            "g_tColor": "materials/models/weapons/v_models/knife_ursus/knife_ursus_color_psd_308a2c50.vtex",
+            "g_tMetalness": "materials/models/weapons/v_models/knife_ursus/knife_ursus_rough_psd_caa640d2.vtex",
+            "g_tNormal": "materials/models/weapons/v_models/knife_ursus/knife_ursus_normal_psd_41a9c5c4.vtex"
+          }
+        }
+      },
+      "name": "weapon_knife_ursus"
+    }
+  ],
+  "meshes": [
+    {
+      "extras": {},
+      "name": "weapons\\models\\knife\\knife_ursus\\weapon_knife_ursus.vmdl_c.body_legacy",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1,
+            "NORMAL": 2,
+            "TANGENT": 3,
+            "JOINTS_0": 4,
+            "WEIGHTS_0": 5
+          },
+          "indices": 6,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "weapons\\models\\knife\\knife_ursus\\weapon_knife_ursus.vmdl_c.body_legacy",
+      "matrix": [
+        3.027916e-09,
+        0,
+        0.025399996,
+        0,
+        0.025399996,
+        3.027916e-09,
+        0,
+        0,
+        0,
+        0.025399996,
+        3.027916e-09,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "weapon_knife_ursus.vmdl_c",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsUsed": [],
+  "images": [],
+  "textures": []
+}

@@ -1,0 +1,252 @@
+{
+  "asset": {
+    "copyright": "",
+    "generator": "Source 2 Viewer 19.2.0.0 - https://valveresourceformat.github.io",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1434,
+      "max": [
+        3.696960926055908,
+        8.586848258972168,
+        4.306698322296143
+      ],
+      "min": [
+        -3.6249587535858154,
+        -7.779580116271973,
+        -3.5483222007751465
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1434,
+      "max": [
+        0.9911496043205261,
+        0.9938047528266907
+      ],
+      "min": [
+        0.008514664135873318,
+        0.0062257759273052216
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1434,
+      "max": [
+        0.9995735883712769,
+        0.9891404509544373,
+        0.9979909658432007
+      ],
+      "min": [
+        -0.994801938533783,
+        -0.9979403614997864,
+        -0.9998290538787842
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 1434,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 1434,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1434,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5125,
+      "count": 5946,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 17208,
+      "byteOffset": 69672,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 11472,
+      "byteOffset": 104088,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 17208,
+      "byteOffset": 86880,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 22944,
+      "byteOffset": 23784,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 11472,
+      "byteOffset": 115560,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 22944,
+      "byteOffset": 46728,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 23784,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 127032,
+      "uri": "defuser.bin"
+    }
+  ],
+  "materials": [
+    {
+      "extras": {
+        "vmat": {
+          "Name": "materials/models/weapons/w_models/w_eq_defuser/w_eq_defuser.vmat",
+          "ShaderName": "csgo_character.vfx",
+          "IntParams": {
+            "F_RETRO_REFLECTIVE": 1,
+            "g_bFogEnabled": 1,
+            "g_nScaleTexCoordUByModelScaleAxis": 0,
+            "g_nScaleTexCoordVByModelScaleAxis": 0,
+            "g_nTextureAddressModeU": 0,
+            "g_nTextureAddressModeV": 0
+          },
+          "FloatParams": {
+            "g_flAmbientOcclusionMasking": 0.4,
+            "g_flModelTintAmount": 1,
+            "g_flTexCoordRotation": 0
+          },
+          "VectorParams": {
+            "g_vColorTint": [
+              0.905882,
+              0.905882,
+              0.905882,
+              0
+            ],
+            "g_vTexCoordCenter": [
+              0.5,
+              0.5,
+              0,
+              0
+            ],
+            "g_vTexCoordOffset": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "g_vTexCoordScale": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "g_vTexCoordScrollSpeed": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "TextureRimMask": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          "TextureParams": {
+            "g_tAmbientOcclusion": "materials/default/default_ao_tga_559f1ac6.vtex",
+            "g_tColor": "materials/models/weapons/w_models/w_eq_defuser/w_eq_defuser_color_psd_84c51258.vtex",
+            "g_tMetalness": "materials/models/weapons/w_models/w_eq_defuser/w_eq_defuser_normal_refl_tga_fd601cf9.vtex",
+            "g_tNormal": "materials/models/weapons/w_models/w_eq_defuser/w_eq_defuser_normal_psd_5786e152.vtex"
+          }
+        }
+      },
+      "name": "w_eq_defuser"
+    }
+  ],
+  "meshes": [
+    {
+      "extras": {},
+      "name": "weapons\\models\\defuser\\defuser.vmdl_c.w_defuser_bg_studio_lod0",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1,
+            "NORMAL": 2,
+            "TANGENT": 3,
+            "JOINTS_0": 4,
+            "WEIGHTS_0": 5
+          },
+          "indices": 6,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "weapons\\models\\defuser\\defuser.vmdl_c.w_defuser_bg_studio_lod0",
+      "matrix": [
+        3.027916e-09,
+        0,
+        0.025399996,
+        0,
+        0.025399996,
+        3.027916e-09,
+        0,
+        0,
+        0,
+        0.025399996,
+        3.027916e-09,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "name": "defuser.vmdl_c",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsUsed": [],
+  "images": [],
+  "textures": []
+}
