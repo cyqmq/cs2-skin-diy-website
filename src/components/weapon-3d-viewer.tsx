@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import * as THREE from "three";
 import type { WeaponSkin } from "../lib/api";
-import { getAlbedoPath } from "../lib/textures";
+import { getTexturePaths } from "../lib/textures";
 import { gradientStyle } from "../gradients";
 
 const MODEL_MAP: Record<string, [string, string]> = {
@@ -52,7 +52,12 @@ function getModelPath(wid: string) {
   return `/models/${info[0]}/${info[1]}.gltf`;
 }
 
-function WeaponModel({ skin, albedoTex }: { skin: WeaponSkin; albedoTex: THREE.Texture | null }) {
+function WeaponModel({ skin, albedoTex, maskTex, normalTex }: {
+  skin: WeaponSkin;
+  albedoTex: THREE.Texture | null;
+  maskTex: THREE.Texture | null;
+  normalTex: THREE.Texture | null;
+}) {
   const ref = useRef<THREE.Group>(null);
   const isDragging = useRef(false);
   const lastPos = useRef({ x: 0, y: 0 });
@@ -146,28 +151,37 @@ function WeaponModel({ skin, albedoTex }: { skin: WeaponSkin; albedoTex: THREE.T
   }, [scene]);
 
   useEffect(() => {
-    if (!albedoTex) return;
+    if (!albedoTex && !maskTex && !normalTex) return;
     cloned.traverse((child) => {
       if (!(child instanceof THREE.Mesh)) return;
-      // Filter like the reference: skip scope/bare_arm materials
       const matName = ((child.material as any)?.name ?? "").toLowerCase();
       if (matName.includes("scope") || matName.includes("bare_arm")) return;
       const mats = Array.isArray(child.material) ? child.material : [child.material];
       for (const mat of mats) {
-        if ("map" in mat) {
+        if (albedoTex && "map" in mat) {
           (mat as any).map = albedoTex;
-          if (mat instanceof THREE.MeshStandardMaterial) {
-            mat.color.set("#ffffff");
-            mat.roughness = 0.5;
-            mat.metalness = 0.1;
-          } else if (mat instanceof THREE.MeshPhongMaterial) {
-            mat.color.set("#ffffff");
-          }
           mat.needsUpdate = true;
+        }
+        if (mat instanceof THREE.MeshStandardMaterial) {
+          if (albedoTex) mat.color.set("#ffffff");
+          if (maskTex) {
+            mat.roughnessMap = maskTex;
+            mat.metalnessMap = maskTex;
+            mat.roughness = 1;
+            mat.metalness = 1;
+            mat.needsUpdate = true;
+          }
+          if (normalTex) {
+            mat.normalMap = normalTex;
+            mat.normalScale.set(1, 1);
+            mat.needsUpdate = true;
+          }
+        } else if (mat instanceof THREE.MeshPhongMaterial && albedoTex) {
+          mat.color.set("#ffffff");
         }
       }
     });
-  }, [cloned, albedoTex]);
+  }, [cloned, albedoTex, maskTex, normalTex]);
 
   return <primitive ref={ref} object={cloned} />;
 }
@@ -176,26 +190,28 @@ interface Weapon3DViewerProps { skin: WeaponSkin }
 
 export function Weapon3DViewer({ skin }: Weapon3DViewerProps) {
   const [tex, setTex] = useState<THREE.Texture | null>(null);
+  const [maskTex, setMaskTex] = useState<THREE.Texture | null>(null);
+  const [normalTex, setNormalTex] = useState<THREE.Texture | null>(null);
   const [showPlaceholder, setShowPlaceholder] = useState(true);
 
+  const loadTex = (path: string): Promise<THREE.Texture> => new Promise((resolve, reject) => {
+    new THREE.TextureLoader().load(path,
+      (t) => { t.colorSpace = THREE.SRGBColorSpace; t.wrapS = THREE.RepeatWrapping; t.wrapT = THREE.RepeatWrapping; t.flipY = false; resolve(t); },
+      undefined, reject
+    );
+  });
+
   useEffect(() => {
-    setTex(null);
-    setShowPlaceholder(true);
+    setTex(null); setMaskTex(null); setNormalTex(null); setShowPlaceholder(true);
     const paintIndex = parseInt(skin.paint_index);
     if (isNaN(paintIndex)) return;
 
-    getAlbedoPath(paintIndex).then((path) => {
-      if (!path) return;
+    getTexturePaths(paintIndex).then((paths) => {
+      if (!paths) return;
       setShowPlaceholder(false);
-      const loader = new THREE.TextureLoader();
-      loader.load(path, (t) => {
-        t.colorSpace = THREE.SRGBColorSpace;
-        t.wrapS = THREE.RepeatWrapping;
-        t.wrapT = THREE.RepeatWrapping;
-        t.flipY = false;
-        t.needsUpdate = true;
-        setTex(t);
-      });
+      loadTex(paths.albedo).then(setTex).catch(() => {});
+      if (paths.materialMask) loadTex(paths.materialMask).then(setMaskTex).catch(() => {});
+      if (paths.normal) loadTex(paths.normal).then(setNormalTex).catch(() => {});
     });
   }, [skin.paint_index]);
 
@@ -209,7 +225,7 @@ export function Weapon3DViewer({ skin }: Weapon3DViewerProps) {
         <hemisphereLight args={["#ffffff", "#111122", 0.5]} />
         <pointLight position={[0, 2, 0]} intensity={0.5} />
         <Suspense fallback={null}>
-          <WeaponModel skin={skin} albedoTex={tex} />
+          <WeaponModel skin={skin} albedoTex={tex} maskTex={maskTex} normalTex={normalTex} />
         </Suspense>
         <OrbitControls
           enableRotate={false}
