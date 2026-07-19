@@ -8,6 +8,12 @@ export default defineConfig({
     host: true,
     port: 3001,
     proxy: {
+      "/csgoapi": {
+        target: "https://raw.githubusercontent.com",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/csgoapi/, "/ByMykel/CSGO-API/main/public/api/en"),
+        secure: false,
+      },
       "/steamimg": {
         target: "https://steamcommunity-a.akamaihd.net",
         changeOrigin: true,

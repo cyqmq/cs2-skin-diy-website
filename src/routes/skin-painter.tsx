@@ -1,13 +1,8 @@
 import { useState, useEffect } from "react";
-import { loadSkinsData, getRarityColor } from "../lib/api";
+import { initData, getWeaponList, getRarityColor } from "../lib/api";
+import type { WeaponInfo, SkinInfo } from "../lib/api";
 import { Weapon3DViewer } from "../components/weapon-3d-viewer";
 import { gradientStyle } from "../gradients";
-
-interface WeaponInfo {
-  id: string;
-  name: string;
-  skins: { paintkit_id: number; name: string; rarity_name: string }[];
-}
 
 const CATEGORY_MAP: Record<string, string> = {
   glock: "Pistols", hkp2000: "Pistols", usp_silencer: "Pistols", elite: "Pistols",
@@ -19,102 +14,75 @@ const CATEGORY_MAP: Record<string, string> = {
   awp: "Sniper Rifles", ssg08: "Sniper Rifles", g3sg1: "Sniper Rifles", scar20: "Sniper Rifles",
   negev: "Heavy", m249: "Heavy",
 };
-
-const CATEGORY_ORDER = ["Pistols", "SMGs", "Shotguns", "Rifles", "Sniper Rifles", "Heavy"];
+const CATS = ["Pistols", "SMGs", "Shotguns", "Rifles", "Sniper Rifles", "Heavy"];
 
 export default function SkinPainter() {
   const [categorized, setCategorized] = useState<Record<string, WeaponInfo[]>>({});
   const [selectedWeapon, setSelectedWeapon] = useState<WeaponInfo | null>(null);
-  const [selectedSkin, setSelectedSkin] = useState<{ paintkit_id: number; name: string; rarity_name: string } | null>(null);
+  const [selectedSkin, setSelectedSkin] = useState<SkinInfo | null>(null);
   const [loading, setLoading] = useState(true);
-  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    loadSkinsData().then((data) => {
+    initData().then(() => {
+      const weapons = getWeaponList();
       const map: Record<string, WeaponInfo[]> = {};
-      for (const w of data.weapons) {
-        if (w.id === "unknown") continue;
-        const cat = CATEGORY_MAP[w.id] || "Other";
+      for (const w of weapons) {
+        const cat = CATEGORY_MAP[w.id] ?? "Other";
         if (!map[cat]) map[cat] = [];
-        map[cat].push({ id: w.id, name: w.name || w.id, skins: w.skins.map((s) => ({ paintkit_id: s.paintkit_id, name: s.name, rarity_name: s.rarity_name })) });
+        map[cat].push(w);
       }
-      for (const cat of Object.keys(map)) map[cat].sort((a, b) => a.name.localeCompare(b.name));
+      for (const k of Object.keys(map)) map[k].sort((a, b) => a.name.localeCompare(b.name));
       setCategorized(map);
       setLoading(false);
     });
   }, []);
 
-  if (loading) {
-    return <div className="flex items-center justify-center h-full text-white/50">Loading skins data...</div>;
-  }
+  if (loading) return <div className="flex items-center justify-center h-full text-white/50">Loading...</div>;
 
   return (
     <div className="flex h-full">
       <aside className="w-56 shrink-0 border-r border-white/10 overflow-y-auto">
         <div className="p-3 text-sm text-white/40 uppercase tracking-wider">Weapons</div>
-        {CATEGORY_ORDER.map((cat) => (
+        {CATS.map((cat) => (
           <div key={cat}>
             <div className="px-3 py-1.5 text-xs text-white/25 uppercase">{cat}</div>
             {(categorized[cat] || []).map((w) => (
-              <button
-                key={w.id}
+              <button key={w.id}
                 onClick={() => { setSelectedWeapon(w); setSelectedSkin(null); }}
-                className={`w-full text-left px-4 py-1.5 text-sm truncate transition-colors ${
-                  selectedWeapon?.id === w.id ? "bg-white/10 text-white" : "text-white/50 hover:bg-white/5 hover:text-white/70"
-                }`}
-              >
-                {w.name}
-              </button>
+                className={`w-full text-left px-4 py-1.5 text-sm truncate ${selectedWeapon?.id === w.id ? "bg-white/10 text-white" : "text-white/50 hover:bg-white/5"}`}
+              >{w.name}</button>
             ))}
           </div>
         ))}
       </aside>
 
-      <section className="flex-1 relative bg-[#0a0a10] overflow-hidden" style={{ background: gradientStyle("pinkBlush") }}>
+      <section className="flex-1 relative overflow-hidden" style={{ background: gradientStyle("pinkBlush") }}>
         {selectedSkin ? (
-          <Weapon3DViewer weaponId={selectedWeapon!.id} paintkitId={selectedSkin.paintkit_id} skinName={selectedSkin.name} rarityName={selectedSkin.rarity_name} />
-        ) : selectedWeapon ? (
-          <div className="flex items-center justify-center h-full text-white/30">Select a skin from the right panel</div>
+          <Weapon3DViewer weaponId={selectedWeapon!.id} paintkitId={selectedSkin.paintkit_id} skinName={selectedSkin.name} rarityName={selectedSkin.rarity} />
         ) : (
-          <div className="flex items-center justify-center h-full text-white/30">Select a weapon from the left panel</div>
+          <div className="flex items-center justify-center h-full text-white/30">Select a skin</div>
         )}
       </section>
 
-      <aside className="w-64 shrink-0 border-l border-white/10 overflow-y-auto">
+      <aside className="w-72 shrink-0 border-l border-white/10 overflow-y-auto">
         {selectedWeapon ? (
           <>
-            <div className="p-3 text-sm text-white/40 uppercase tracking-wider sticky top-0 bg-black/80 backdrop-blur flex items-center justify-between">
-              <span>{selectedWeapon.name} Skins</span>
-              <button
-                type="button"
-                onClick={() => {
-                  const text = selectedSkin?.name || "none";
-                  const ta = document.createElement("textarea");
-                  ta.value = text; ta.style.cssText = "position:fixed;left:-9999px";
-                  document.body.appendChild(ta); ta.select();
-                  document.execCommand("copy"); ta.remove();
-                  setCopied(true); setTimeout(() => setCopied(false), 1500);
-                }}
-                className="text-[10px] px-2 py-0.5 rounded bg-white/10 hover:bg-white/20 text-white/50 cursor-pointer"
-              >
-                {copied ? "Copied!" : "Copy"}
-              </button>
-            </div>
+            <div className="p-3 text-sm text-white/40 uppercase sticky top-0 bg-black/80 backdrop-blur">{selectedWeapon.name} Skins</div>
             {selectedWeapon.skins.map((s) => (
-              <button
-                key={s.paintkit_id}
-                onClick={() => setSelectedSkin(s)}
-                className={`w-full text-left px-3 py-2 transition-colors ${
-                  selectedSkin?.paintkit_id === s.paintkit_id ? "bg-white/10" : "hover:bg-white/5"
-                }`}
-              >
-                <div className="text-xs truncate text-white/70">{s.name}</div>
-                <div className="text-[10px] mt-0.5" style={{ color: getRarityColor(s.rarity_name) }}>{s.rarity_name}</div>
+              <button key={s.paintkit_id} onClick={() => setSelectedSkin(s)}
+                className={`w-full text-left px-3 py-2 flex items-center gap-3 ${selectedSkin?.paintkit_id === s.paintkit_id ? "bg-white/10" : "hover:bg-white/5"}`}>
+                <div className="flex-1 min-w-0">
+                  <div className="text-xs truncate text-white/70">
+                    {s.name}
+                    {s.hasTexture && <span className="text-green-400 ml-1 text-[10px]">✓</span>}
+                  </div>
+                  <div className="text-[10px] mt-0.5" style={{ color: getRarityColor(s.rarity) }}>{s.rarity}</div>
+                </div>
               </button>
             ))}
           </>
         ) : (
-          <div className="p-6 text-sm text-white/30 text-center">← Pick a weapon first</div>
+          <div className="p-6 text-sm text-white/30 text-center">Pick a weapon</div>
         )}
       </aside>
     </div>
