@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+public/webp
+
+# 大纹理资源文件（需另外下载 Release 纹理包）
+public/lielxd/
+public/export/
+webp/
+public/environment.hdr

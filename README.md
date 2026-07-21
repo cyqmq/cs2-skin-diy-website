@@ -1,56 +1,111 @@
-# CS2 3D Skin Inspect
+# CS2 Skin DIY Website / CS2 武器皮肤预览工具
 
-CS2 武器皮肤 3D 检视工具 - 浏览器端实时预览武器模型与涂装纹理。
+基于 Three.js 的浏览器端 CS2 武器皮肤预览工具。加载带正确 UV 映射的预烘焙纹理，在 3D 模型上实时显示皮肤效果。支持中英文切换。
 
-## 技术栈
+A browser-based CS2 weapon skin preview tool. Displays pre-baked colored textures on CS2 GLB models with correct UV mapping. Supports Chinese/English bilingual switching.
 
-- React 19 + TypeScript
-- Vite + Tailwind CSS v4
-- React Router v8 (SPA mode)
-- Three.js + @react-three/fiber + @react-three/drei
+## 功能 / Features
 
-## 功能
+- **63 种武器型号**（含所有匕首/刀、手套），GLB 模型 + 预烘焙纹理
+- **1620+ 个皮肤纹理**，三种来源（lielxd PNG → webp → export）
+- **皮肤开关**：一键切换显示/隐藏皮肤纹理
+- **模型切换**：Legacy / HD 网格切换
+- **中英文语言切换**
+- **鼠标拖拽旋转/缩放 3D 预览**
+- **信息面板**：显示模型路径、纹理路径、PID、加载状态
 
-- **68 种武器 3D 模型** — GLTF 格式，自 VPK 导出
-- **皮肤纹理加载** — paint_index → albedo 纹理自动匹配
-- **鼠标拖拽旋转** — 左键拖拽旋转模型，右键平移，滚轮缩放
-- **CSGO-API 皮肤数据** — 武器分类、皮肤列表、稀有度颜色
-- **颜色组背景** — 25 种 CSS 渐变色可选
-- **Steam CDN 代理** — Vite 代理解决跨域纹理加载
-
-## 快速开始
+## 快速开始 / Quick Start
 
 ```bash
+# 克隆仓库
+git clone https://github.com/cyqmq/cs2-skin-diy-website.git
+cd cs2-skin-diy-website
+
+# 安装依赖
 npm install
-npm run dev
+
+# 下载纹理资源包（Release 页面下载后解压到项目根目录）
+# https://github.com/cyqmq/cs2-skin-diy-website/releases
+# 解压后应出现以下目录：
+#   public/lielxd/
+#   public/export/
+#   webp/
+#   public/environment.hdr
+
+# 启动开发服务器
+npx vite --host 0.0.0.0 --port 3001
 ```
 
-访问 `http://localhost:3001`
+浏览器打开 `http://localhost:3001`（或局域网 `http://192.168.5.10:3001`）。
 
-## 项目结构
+## 数据来源 / Data Sources
+
+| 来源 | 数量 | 格式 |
+|------|------|------|
+| `public/lielxd/` | 1620+ PIDs | 8-bit PNG (color + metalness) |
+| `webp/` | 278 | .webp |
+| `public/export/cs2_all_weapons/` | 230 GLB + 632 纹理 | .glb / .webp / .png |
+| `public/export/cs2_nightwish/` | 附加模型 | .glb |
+
+- 皮肤数据：基于 CSGO-API 的 `csgoapi.json`（中/英双语）
+- 纹理来源：[LielXD/CS2-WeaponPaints-Website](https://github.com/LielXD/CS2-WeaponPaints-Website)
+- 3D 模型：来自 CS2 游戏文件提取的 GLB
+
+## 目录结构 / Project Structure
 
 ```
-src/
-  components/weapon-3d-viewer.tsx   # 3D 武器查看器
-  routes/skin-painter.tsx           # 主页面（三栏布局）
-  routes/_layout.tsx                # 顶部导航
-  lib/api.ts                        # CSGO-API 数据获取
-  lib/textures.ts                   # 纹理路径查找
-  lib/inspect_decoder.js            # CS2 检视链接解码器（参考）
-  lib/skin_data.js                  # 皮肤图案数据（Fade/蓝宝石等级）
-  gradients.ts                      # 25 种渐变色背景
 public/
-  models/                           # 68 武器 GLTF 模型
-  paint_index_map.json              # paint_index → 纹理文件映射
-  textures/                         # 从 VPK 提取的涂装纹理（符号链接）
+├── data/               # JSON 数据文件
+│   ├── index.json          # 武器 + 皮肤索引
+│   ├── lielxd_manifest.json # 纹理清单
+│   ├── csgoapi.json         # CSGO-API 英文数据
+│   ├── csgoapi_zh.json      # CSGO-API 中文数据
+│   └── csgoapi_en.json      # 英文别名数据
+├── lielxd/             # 主要皮肤纹理（.png / .webp）→ 需下载
+├── export/             # GLB 模型 + 嵌入式纹理 → 需下载
+│   ├── cs2_all_weapons/
+│   └── cs2_nightwish/
+├── environment.hdr     # 环境光照贴图 → 需下载
+└── ...
+src/
+├── components/
+│   └── weapon-3d-viewer.tsx  # 3D 渲染组件
+├── lib/
+│   └── api.ts              # 数据加载 + 纹理解析
+├── routes/
+│   └── skin-painter.tsx    # 主页面（侧边栏 + 3D 预览）
+├── ...
 ```
 
-## 纹理数据来源
+## 技术栈 / Tech Stack
 
-涂装纹理从 CS2 `pak01_dir.vpk` 提取，使用 [ValveResourceFormat](https://github.com/ValveResourceFormat/ValveResourceFormat) 导出。
+- React 19 + TypeScript + Vite
+- Tailwind CSS v4
+- React Router v8
+- Three.js + @react-three/fiber + @react-three/drei
 
-纹理路径映射表 `paint_index_map.json` 由提取工具自动生成。
+## 开发 / Development
 
-## License
+```bash
+# 启动开发服务器
+npm run dev
+
+# 构建生产版本
+npm run build
+
+# 预览生产版本
+npm run preview
+
+# 代码检查
+npm run lint
+```
+
+## 已知限制 / Known Limitations
+
+- 约 267 个枪/刀皮肤缺少纹理来源（在 lielxd 中没有对应贴图）
+- 手套（handwraps/gloves）纹理暂不渲染
+- Steam CDN 预览图在中国大陆可能无法加载，但不影响本地 3D 纹理显示
+
+## 许可证 / License
 
 MIT

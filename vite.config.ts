@@ -15,7 +15,7 @@ export default defineConfig({
         secure: false,
       },
       "/steamimg": {
-        target: "https://steamcommunity-a.akamaihd.net",
+        target: "https://community.akamai.steamstatic.com",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/steamimg/, ""),
         secure: false,

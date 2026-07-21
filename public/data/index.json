@@ -1,0 +1,1933 @@
+{
+  "weapons": [
+    {
+      "id": "ak47",
+      "name": "ak47",
+      "model": "cs2_all_weapons/weapons/models/ak47/weapon_rif_ak47.glb",
+      "skins": [
+        {
+          "paintkit_id": 44,
+          "name": "Case Hardened",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_44.webp"
+        },
+        {
+          "paintkit_id": 72,
+          "name": "Safari Mesh",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_72.webp"
+        },
+        {
+          "paintkit_id": 226,
+          "name": "Blue Laminate",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_226.webp"
+        },
+        {
+          "paintkit_id": 282,
+          "name": "Redline",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_282.webp"
+        },
+        {
+          "paintkit_id": 422,
+          "name": "Elite Build",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_422.webp"
+        },
+        {
+          "paintkit_id": 506,
+          "name": "Point Disarray",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_506.webp"
+        },
+        {
+          "paintkit_id": 639,
+          "name": "Bloodsport",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_639.webp"
+        },
+        {
+          "paintkit_id": 795,
+          "name": "Safety Net",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_795.webp"
+        },
+        {
+          "paintkit_id": 801,
+          "name": "Asiimov",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_801.webp"
+        },
+        {
+          "paintkit_id": 941,
+          "name": "Phantom Disruptor",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_941.webp"
+        },
+        {
+          "paintkit_id": 959,
+          "name": "Legion of Anubis",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_959.webp"
+        },
+        {
+          "paintkit_id": 1035,
+          "name": "Slate",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ak47_1035.webp"
+        },
+        {
+          "paintkit_id": 1141,
+          "name": "Nightwish",
+          "rarity": "Classified",
+          "texture_export": "cs2_nightwish/materials/models/weapons/customization/paints/vmats/ak47_nightwish.png"
+        }
+      ]
+    },
+    {
+      "id": "aug",
+      "name": "aug",
+      "model": "cs2_all_weapons/weapons/models/aug/weapon_rif_aug.glb",
+      "skins": [
+        {
+          "paintkit_id": 134,
+          "name": "Eye of Zapems",
+          "rarity": "Classified",
+          "texture_webp": "weapon_aug_134.webp"
+        }
+      ]
+    },
+    {
+      "id": "awp",
+      "name": "awp",
+      "model": "cs2_all_weapons/weapons/models/awp/weapon_snip_awp.glb",
+      "skins": [
+        {
+          "paintkit_id": 84,
+          "name": "Pink DDPAT",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_84.webp"
+        },
+        {
+          "paintkit_id": 279,
+          "name": "Asiimov",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_279.webp"
+        },
+        {
+          "paintkit_id": 424,
+          "name": "Worm God",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_424.webp"
+        },
+        {
+          "paintkit_id": 475,
+          "name": "Hyper Beast",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_475.webp"
+        },
+        {
+          "paintkit_id": 584,
+          "name": "Phobos",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_584.webp"
+        },
+        {
+          "paintkit_id": 640,
+          "name": "Fever Dream",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_640.webp"
+        },
+        {
+          "paintkit_id": 718,
+          "name": "PAW",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_718.webp"
+        },
+        {
+          "paintkit_id": 788,
+          "name": "Acheron",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_788.webp"
+        },
+        {
+          "paintkit_id": 803,
+          "name": "Neo-Noir",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_803.webp"
+        },
+        {
+          "paintkit_id": 838,
+          "name": "Atheris",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_838.webp"
+        },
+        {
+          "paintkit_id": 887,
+          "name": "Containment Breach",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_887.webp"
+        },
+        {
+          "paintkit_id": 943,
+          "name": "Capillary",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_943.webp"
+        },
+        {
+          "paintkit_id": 1026,
+          "name": "Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_1026.webp"
+        },
+        {
+          "paintkit_id": 1206,
+          "name": "Printstream",
+          "rarity": "Classified",
+          "texture_webp": "weapon_awp_1206.webp"
+        }
+      ]
+    },
+    {
+      "id": "bizon",
+      "name": "bizon",
+      "model": "cs2_all_weapons/weapons/models/bizon/weapon_smg_bizon.glb",
+      "skins": [
+        {
+          "paintkit_id": 3,
+          "name": "Candy Apple",
+          "rarity": "Classified",
+          "texture_webp": "weapon_bizon_3.webp"
+        },
+        {
+          "paintkit_id": 159,
+          "name": "Brass",
+          "rarity": "Classified",
+          "texture_webp": "weapon_bizon_159.webp"
+        }
+      ]
+    },
+    {
+      "id": "deagle",
+      "name": "deagle",
+      "model": "cs2_all_weapons/weapons/models/deagle/weapon_pist_deagle.glb",
+      "skins": [
+        {
+          "paintkit_id": 232,
+          "name": "Crimson Web",
+          "rarity": "Classified",
+          "texture_webp": "weapon_deagle_232.webp"
+        },
+        {
+          "paintkit_id": 805,
+          "name": "Mecha Industries",
+          "rarity": "Classified",
+          "texture_webp": "weapon_deagle_805.webp"
+        },
+        {
+          "paintkit_id": 841,
+          "name": "Light Rail",
+          "rarity": "Classified",
+          "texture_webp": "weapon_deagle_841.webp"
+        },
+        {
+          "paintkit_id": 962,
+          "name": "Printstream",
+          "rarity": "Classified",
+          "texture_webp": "weapon_deagle_962.webp"
+        },
+        {
+          "paintkit_id": 1050,
+          "name": "Trigger Discipline",
+          "rarity": "Classified",
+          "texture_webp": "weapon_deagle_1050.webp"
+        },
+        {
+          "paintkit_id": 1189,
+          "name": "Serpent Strike",
+          "rarity": "Classified",
+          "texture_webp": "weapon_deagle_1189.webp"
+        }
+      ]
+    },
+    {
+      "id": "famas",
+      "name": "famas",
+      "model": "cs2_all_weapons/weapons/models/famas/weapon_rif_famas.glb",
+      "skins": [
+        {
+          "paintkit_id": 260,
+          "name": "Pulse",
+          "rarity": "Classified",
+          "texture_webp": "weapon_famas_260.webp"
+        },
+        {
+          "paintkit_id": 626,
+          "name": "Mecha Industries",
+          "rarity": "Classified",
+          "texture_webp": "weapon_famas_626.webp"
+        },
+        {
+          "paintkit_id": 1184,
+          "name": "Bad Trip",
+          "rarity": "Classified",
+          "texture_webp": "weapon_famas_1184.webp"
+        }
+      ]
+    },
+    {
+      "id": "fiveseven",
+      "name": "fiveseven",
+      "model": "cs2_all_weapons/weapons/models/fiveseven/weapon_pist_fiveseven.glb",
+      "skins": [
+        {
+          "paintkit_id": 44,
+          "name": "Case Hardened",
+          "rarity": "Classified",
+          "texture_webp": "weapon_fiveseven_44.webp"
+        },
+        {
+          "paintkit_id": 141,
+          "name": "Orange Peel",
+          "rarity": "Classified",
+          "texture_webp": "weapon_fiveseven_141.webp"
+        }
+      ]
+    },
+    {
+      "id": "g3sg1",
+      "name": "g3sg1",
+      "model": "cs2_all_weapons/weapons/models/g3sg1/weapon_snip_g3sg1.glb",
+      "skins": [
+        {
+          "paintkit_id": 438,
+          "name": "Chronos",
+          "rarity": "Classified",
+          "texture_webp": "weapon_g3sg1_438.webp"
+        }
+      ]
+    },
+    {
+      "id": "galilar",
+      "name": "galilar",
+      "model": "cs2_all_weapons/weapons/models/galilar/weapon_rif_galilar.glb",
+      "skins": [
+        {
+          "paintkit_id": 379,
+          "name": "Cerberus",
+          "rarity": "Classified",
+          "texture_webp": "weapon_galilar_379.webp"
+        },
+        {
+          "paintkit_id": 1185,
+          "name": "Control",
+          "rarity": "Classified",
+          "texture_webp": "weapon_galilar_1185.webp"
+        }
+      ]
+    },
+    {
+      "id": "glock18",
+      "name": "glock18",
+      "model": "cs2_all_weapons/weapons/models/glock18/weapon_pist_glock18.glb",
+      "skins": [
+        {
+          "paintkit_id": 3,
+          "name": "Candy Apple",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_3.webp"
+        },
+        {
+          "paintkit_id": 38,
+          "name": "Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_38.webp"
+        },
+        {
+          "paintkit_id": 40,
+          "name": "Night",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_40.webp"
+        },
+        {
+          "paintkit_id": 353,
+          "name": "Water Elemental",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_353.webp"
+        },
+        {
+          "paintkit_id": 367,
+          "name": "Reactor",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_367.webp"
+        },
+        {
+          "paintkit_id": 586,
+          "name": "Wasteland Rebel",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_586.webp"
+        },
+        {
+          "paintkit_id": 694,
+          "name": "Moonrise",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_694.webp"
+        },
+        {
+          "paintkit_id": 789,
+          "name": "Nuclear Garden",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_789.webp"
+        },
+        {
+          "paintkit_id": 963,
+          "name": "Vogue",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_963.webp"
+        },
+        {
+          "paintkit_id": 1119,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_1119.webp"
+        },
+        {
+          "paintkit_id": 1120,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_1120.webp"
+        },
+        {
+          "paintkit_id": 1121,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_1121.webp"
+        },
+        {
+          "paintkit_id": 1122,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_1122.webp"
+        },
+        {
+          "paintkit_id": 1123,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_1123.webp"
+        },
+        {
+          "paintkit_id": 1208,
+          "name": "Shinobu",
+          "rarity": "Classified",
+          "texture_webp": "weapon_glock_1208.webp"
+        }
+      ]
+    },
+    {
+      "id": "hkp2000",
+      "name": "hkp2000",
+      "model": "cs2_all_weapons/weapons/models/hkp2000/weapon_pist_hkp2000.glb",
+      "skins": [
+        {
+          "paintkit_id": 246,
+          "name": "Amber Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_hkp2000_246.webp"
+        },
+        {
+          "paintkit_id": 1181,
+          "name": "Sure Grip",
+          "rarity": "Classified",
+          "texture_webp": "weapon_hkp2000_1181.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_butterfly",
+      "name": "knife_butterfly",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_butterfly/weapon_knife_butterfly.glb",
+      "skins": [
+        {
+          "paintkit_id": 98,
+          "name": "Ultraviolet",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_98.webp"
+        },
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_415.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_418.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_421.webp"
+        },
+        {
+          "paintkit_id": 568,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_568.webp"
+        },
+        {
+          "paintkit_id": 569,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_569.webp"
+        },
+        {
+          "paintkit_id": 570,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_570.webp"
+        },
+        {
+          "paintkit_id": 571,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_571.webp"
+        },
+        {
+          "paintkit_id": 572,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_572.webp"
+        },
+        {
+          "paintkit_id": 617,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_617.webp"
+        },
+        {
+          "paintkit_id": 618,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_618.webp"
+        },
+        {
+          "paintkit_id": 619,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_butterfly_619.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_canis",
+      "name": "knife_canis",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_canis/weapon_knife_canis.glb",
+      "skins": [
+        {
+          "paintkit_id": 98,
+          "name": "Ultraviolet",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_canis_98.webp"
+        },
+        {
+          "paintkit_id": 409,
+          "name": "Tiger Tooth",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_canis_409.webp"
+        },
+        {
+          "paintkit_id": 410,
+          "name": "Damascus Steel",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_canis_410.webp"
+        },
+        {
+          "paintkit_id": 413,
+          "name": "Marble Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_canis_413.webp"
+        },
+        {
+          "paintkit_id": 414,
+          "name": "Rust Coat",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_canis_414.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_cord",
+      "name": "knife_cord",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_cord/weapon_knife_cord.glb",
+      "skins": [
+        {
+          "paintkit_id": 409,
+          "name": "Tiger Tooth",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_cord_409.webp"
+        },
+        {
+          "paintkit_id": 410,
+          "name": "Damascus Steel",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_cord_410.webp"
+        },
+        {
+          "paintkit_id": 413,
+          "name": "Marble Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_cord_413.webp"
+        },
+        {
+          "paintkit_id": 414,
+          "name": "Rust Coat",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_cord_414.webp"
+        },
+        {
+          "paintkit_id": 621,
+          "name": "Ultraviolet",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_cord_621.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_falchion",
+      "name": "knife_falchion",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_falchion/weapon_knife_falchion.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_421.webp"
+        },
+        {
+          "paintkit_id": 568,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_568.webp"
+        },
+        {
+          "paintkit_id": 569,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_569.webp"
+        },
+        {
+          "paintkit_id": 570,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_570.webp"
+        },
+        {
+          "paintkit_id": 571,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_571.webp"
+        },
+        {
+          "paintkit_id": 572,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_falchion_572.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_flip",
+      "name": "knife_flip",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_flip/weapon_knife_flip.glb",
+      "skins": [
+        {
+          "paintkit_id": 38,
+          "name": "Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_flip_38.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_gut",
+      "name": "knife_gut",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_gut/weapon_knife_gut.glb",
+      "skins": [
+        {
+          "paintkit_id": 38,
+          "name": "Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_38.webp"
+        },
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_421.webp"
+        },
+        {
+          "paintkit_id": 568,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_568.webp"
+        },
+        {
+          "paintkit_id": 569,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_569.webp"
+        },
+        {
+          "paintkit_id": 570,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_570.webp"
+        },
+        {
+          "paintkit_id": 571,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_571.webp"
+        },
+        {
+          "paintkit_id": 572,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gut_572.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_push",
+      "name": "knife_push",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_push/weapon_knife_push.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gypsy_jackknife_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gypsy_jackknife_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gypsy_jackknife_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gypsy_jackknife_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gypsy_jackknife_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gypsy_jackknife_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_gypsy_jackknife_421.webp"
+        },
+        {
+          "paintkit_id": 568,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_push_568.webp"
+        },
+        {
+          "paintkit_id": 569,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_push_569.webp"
+        },
+        {
+          "paintkit_id": 570,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_push_570.webp"
+        },
+        {
+          "paintkit_id": 571,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_push_571.webp"
+        },
+        {
+          "paintkit_id": 572,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_push_572.webp"
+        },
+        {
+          "paintkit_id": 617,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_push_617.webp"
+        },
+        {
+          "paintkit_id": 618,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_push_618.webp"
+        },
+        {
+          "paintkit_id": 619,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_push_619.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_karambit",
+      "name": "knife_karambit",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_karambit/weapon_knife_karambit.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_421.webp"
+        },
+        {
+          "paintkit_id": 568,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_568.webp"
+        },
+        {
+          "paintkit_id": 569,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_569.webp"
+        },
+        {
+          "paintkit_id": 570,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_570.webp"
+        },
+        {
+          "paintkit_id": 571,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_571.webp"
+        },
+        {
+          "paintkit_id": 572,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_karambit_572.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_m9",
+      "name": "knife_m9",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_m9/weapon_knife_m9.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_421.webp"
+        },
+        {
+          "paintkit_id": 568,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_568.webp"
+        },
+        {
+          "paintkit_id": 569,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_569.webp"
+        },
+        {
+          "paintkit_id": 570,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_570.webp"
+        },
+        {
+          "paintkit_id": 571,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_571.webp"
+        },
+        {
+          "paintkit_id": 572,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_m9_bayonet_572.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_outdoor",
+      "name": "knife_outdoor",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_outdoor/weapon_knife_outdoor.glb",
+      "skins": [
+        {
+          "paintkit_id": 38,
+          "name": "Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_outdoor_38.webp"
+        },
+        {
+          "paintkit_id": 98,
+          "name": "Ultraviolet",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_outdoor_98.webp"
+        },
+        {
+          "paintkit_id": 409,
+          "name": "Tiger Tooth",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_outdoor_409.webp"
+        },
+        {
+          "paintkit_id": 410,
+          "name": "Damascus Steel",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_outdoor_410.webp"
+        },
+        {
+          "paintkit_id": 413,
+          "name": "Marble Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_outdoor_413.webp"
+        },
+        {
+          "paintkit_id": 414,
+          "name": "Rust Coat",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_outdoor_414.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_skeleton",
+      "name": "knife_skeleton",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_skeleton/weapon_knife_skeleton.glb",
+      "skins": [
+        {
+          "paintkit_id": 98,
+          "name": "Ultraviolet",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_skeleton_98.webp"
+        },
+        {
+          "paintkit_id": 409,
+          "name": "Tiger Tooth",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_skeleton_409.webp"
+        },
+        {
+          "paintkit_id": 410,
+          "name": "Damascus Steel",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_skeleton_410.webp"
+        },
+        {
+          "paintkit_id": 413,
+          "name": "Marble Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_skeleton_413.webp"
+        },
+        {
+          "paintkit_id": 414,
+          "name": "Rust Coat",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_skeleton_414.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_stiletto",
+      "name": "knife_stiletto",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_stiletto/weapon_knife_stiletto.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_stiletto_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_stiletto_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_stiletto_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_stiletto_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_stiletto_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_stiletto_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_stiletto_421.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_bowie",
+      "name": "knife_bowie",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_bowie/weapon_knife_bowie.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_421.webp"
+        },
+        {
+          "paintkit_id": 568,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_568.webp"
+        },
+        {
+          "paintkit_id": 569,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_569.webp"
+        },
+        {
+          "paintkit_id": 570,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_570.webp"
+        },
+        {
+          "paintkit_id": 571,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_571.webp"
+        },
+        {
+          "paintkit_id": 572,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_survival_bowie_572.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_tactical",
+      "name": "knife_tactical",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_tactical/weapon_knife_tactical.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_421.webp"
+        },
+        {
+          "paintkit_id": 568,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_568.webp"
+        },
+        {
+          "paintkit_id": 569,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_569.webp"
+        },
+        {
+          "paintkit_id": 570,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_570.webp"
+        },
+        {
+          "paintkit_id": 571,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_571.webp"
+        },
+        {
+          "paintkit_id": 572,
+          "name": "Gamma Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_tactical_572.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_ursus",
+      "name": "knife_ursus",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_ursus/weapon_knife_ursus.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_ursus_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_ursus_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_ursus_417.webp"
+        },
+        {
+          "paintkit_id": 418,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_ursus_418.webp"
+        },
+        {
+          "paintkit_id": 419,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_ursus_419.webp"
+        },
+        {
+          "paintkit_id": 420,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_ursus_420.webp"
+        },
+        {
+          "paintkit_id": 421,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_ursus_421.webp"
+        }
+      ]
+    },
+    {
+      "id": "knife_css",
+      "name": "knife_css",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_css/weapon_knife_css.glb",
+      "skins": [
+        {
+          "paintkit_id": 415,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_widowmaker_415.webp"
+        },
+        {
+          "paintkit_id": 416,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_widowmaker_416.webp"
+        },
+        {
+          "paintkit_id": 417,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_widowmaker_417.webp"
+        },
+        {
+          "paintkit_id": 852,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_widowmaker_852.webp"
+        },
+        {
+          "paintkit_id": 853,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_widowmaker_853.webp"
+        },
+        {
+          "paintkit_id": 854,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_widowmaker_854.webp"
+        },
+        {
+          "paintkit_id": 855,
+          "name": "Doppler",
+          "rarity": "Classified",
+          "texture_webp": "weapon_knife_widowmaker_855.webp"
+        }
+      ]
+    },
+    {
+      "id": "m4a4",
+      "name": "m4a4",
+      "model": "cs2_all_weapons/weapons/models/m4a4/weapon_rif_m4a4.glb",
+      "skins": [
+        {
+          "paintkit_id": 17,
+          "name": "Urban DDPAT",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_17.webp"
+        },
+        {
+          "paintkit_id": 588,
+          "name": "Desolate Space",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_588.webp"
+        },
+        {
+          "paintkit_id": 632,
+          "name": "Buzz Kill",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_632.webp"
+        },
+        {
+          "paintkit_id": 695,
+          "name": "Neo-Noir",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_695.webp"
+        },
+        {
+          "paintkit_id": 780,
+          "name": "Mainframe",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_780.webp"
+        },
+        {
+          "paintkit_id": 971,
+          "name": "Tooth Fairy",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_971.webp"
+        },
+        {
+          "paintkit_id": 1210,
+          "name": "Choppa",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_1210.webp"
+        }
+      ]
+    },
+    {
+      "id": "m4a1_silencer",
+      "name": "m4a1_silencer",
+      "model": "cs2_all_weapons/weapons/models/m4a1_silencer/weapon_rif_m4a1_silencer.glb",
+      "skins": [
+        {
+          "paintkit_id": 254,
+          "name": "Nitro",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_silencer_254.webp"
+        },
+        {
+          "paintkit_id": 360,
+          "name": "Cyrex",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_silencer_360.webp"
+        },
+        {
+          "paintkit_id": 430,
+          "name": "Hyper Beast",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_silencer_430.webp"
+        },
+        {
+          "paintkit_id": 644,
+          "name": "Decimator",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_silencer_644.webp"
+        },
+        {
+          "paintkit_id": 714,
+          "name": "Nightmare",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_silencer_714.webp"
+        },
+        {
+          "paintkit_id": 792,
+          "name": "Control Panel",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_silencer_792.webp"
+        },
+        {
+          "paintkit_id": 984,
+          "name": "Printstream",
+          "rarity": "Classified",
+          "texture_webp": "weapon_m4a1_silencer_984.webp"
+        }
+      ]
+    },
+    {
+      "id": "mac10",
+      "name": "mac10",
+      "model": "cs2_all_weapons/weapons/models/mac10/weapon_smg_mac10.glb",
+      "skins": [
+        {
+          "paintkit_id": 3,
+          "name": "Candy Apple",
+          "rarity": "Classified",
+          "texture_webp": "weapon_mac10_3.webp"
+        },
+        {
+          "paintkit_id": 38,
+          "name": "Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_mac10_38.webp"
+        },
+        {
+          "paintkit_id": 246,
+          "name": "Amber Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_mac10_246.webp"
+        },
+        {
+          "paintkit_id": 372,
+          "name": "Nuclear Garden",
+          "rarity": "Classified",
+          "texture_webp": "weapon_mac10_372.webp"
+        }
+      ]
+    },
+    {
+      "id": "mp7",
+      "name": "mp7",
+      "model": "cs2_all_weapons/weapons/models/mp7/weapon_smg_mp7.glb",
+      "skins": [
+        {
+          "paintkit_id": 696,
+          "name": "Bloodsport",
+          "rarity": "Classified",
+          "texture_webp": "weapon_mp7_696.webp"
+        },
+        {
+          "paintkit_id": 752,
+          "name": "Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_mp7_752.webp"
+        }
+      ]
+    },
+    {
+      "id": "mp9",
+      "name": "mp9",
+      "model": "cs2_all_weapons/weapons/models/mp9/weapon_smg_mp9.glb",
+      "skins": [
+        {
+          "paintkit_id": 33,
+          "name": "Hot Rod",
+          "rarity": "Classified",
+          "texture_webp": "weapon_mp9_33.webp"
+        },
+        {
+          "paintkit_id": 1193,
+          "name": "Nexus",
+          "rarity": "Classified",
+          "texture_webp": "weapon_mp9_1193.webp"
+        }
+      ]
+    },
+    {
+      "id": "nova",
+      "name": "nova",
+      "model": "cs2_all_weapons/weapons/models/nova/weapon_shot_nova.glb",
+      "skins": [
+        {
+          "paintkit_id": 1192,
+          "name": "Rising Sun",
+          "rarity": "Classified",
+          "texture_webp": "weapon_nova_1192.webp"
+        }
+      ]
+    },
+    {
+      "id": "p250",
+      "name": "p250",
+      "model": "cs2_all_weapons/weapons/models/p250/weapon_pist_p250.glb",
+      "skins": [
+        {
+          "paintkit_id": 551,
+          "name": "Asiimov",
+          "rarity": "Classified",
+          "texture_webp": "weapon_p250_551.webp"
+        }
+      ]
+    },
+    {
+      "id": "p90",
+      "name": "p90",
+      "model": "cs2_all_weapons/weapons/models/p90/weapon_smg_p90.glb",
+      "skins": [
+        {
+          "paintkit_id": 228,
+          "name": "Blind Spot",
+          "rarity": "Classified",
+          "texture_webp": "weapon_p90_228.webp"
+        },
+        {
+          "paintkit_id": 359,
+          "name": "Asiimov",
+          "rarity": "Classified",
+          "texture_webp": "weapon_p90_359.webp"
+        },
+        {
+          "paintkit_id": 486,
+          "name": "Elite Build",
+          "rarity": "Classified",
+          "texture_webp": "weapon_p90_486.webp"
+        },
+        {
+          "paintkit_id": 516,
+          "name": "Shapewood",
+          "rarity": "Classified",
+          "texture_webp": "weapon_p90_516.webp"
+        },
+        {
+          "paintkit_id": 726,
+          "name": "Sunset Lily",
+          "rarity": "Classified",
+          "texture_webp": "weapon_p90_726.webp"
+        },
+        {
+          "paintkit_id": 849,
+          "name": "Off World",
+          "rarity": "Classified",
+          "texture_webp": "weapon_p90_849.webp"
+        },
+        {
+          "paintkit_id": 1190,
+          "name": "Wave Breaker",
+          "rarity": "Classified",
+          "texture_webp": "weapon_p90_1190.webp"
+        }
+      ]
+    },
+    {
+      "id": "revolver",
+      "name": "revolver",
+      "model": "cs2_all_weapons/weapons/models/revolver/weapon_pist_revolver.glb",
+      "skins": [
+        {
+          "paintkit_id": 12,
+          "name": "Crimson Web",
+          "rarity": "Classified",
+          "texture_webp": "weapon_revolver_12.webp"
+        },
+        {
+          "paintkit_id": 522,
+          "name": "Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_revolver_522.webp"
+        },
+        {
+          "paintkit_id": 523,
+          "name": "Amber Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_revolver_523.webp"
+        }
+      ]
+    },
+    {
+      "id": "sawedoff",
+      "name": "sawedoff",
+      "model": "cs2_all_weapons/weapons/models/sawedoff/weapon_shot_sawedoff.glb",
+      "skins": [
+        {
+          "paintkit_id": 246,
+          "name": "Amber Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_sawedoff_246.webp"
+        }
+      ]
+    },
+    {
+      "id": "sg556",
+      "name": "sg556",
+      "model": "cs2_all_weapons/weapons/models/sg556/weapon_rif_sg556.glb",
+      "skins": [
+        {
+          "paintkit_id": 247,
+          "name": "Damascus Steel",
+          "rarity": "Classified",
+          "texture_webp": "weapon_sg556_247.webp"
+        }
+      ]
+    },
+    {
+      "id": "ssg08",
+      "name": "ssg08",
+      "model": "cs2_all_weapons/weapons/models/ssg08/weapon_snip_ssg08.glb",
+      "skins": [
+        {
+          "paintkit_id": 253,
+          "name": "Acid Fade",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ssg08_253.webp"
+        },
+        {
+          "paintkit_id": 624,
+          "name": "Dragonfire",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ssg08_624.webp"
+        },
+        {
+          "paintkit_id": 956,
+          "name": "Fever Dream",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ssg08_956.webp"
+        },
+        {
+          "paintkit_id": 1187,
+          "name": "Memorial",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ssg08_1187.webp"
+        }
+      ]
+    },
+    {
+      "id": "taser",
+      "name": "taser",
+      "model": "cs2_all_weapons/weapons/models/taser/weapon_pist_taser.glb",
+      "skins": [
+        {
+          "paintkit_id": 1183,
+          "name": "Tosai",
+          "rarity": "Classified",
+          "texture_webp": "weapon_taser_1183.webp"
+        }
+      ]
+    },
+    {
+      "id": "tec9",
+      "name": "tec9",
+      "model": "cs2_all_weapons/weapons/models/tec9/weapon_pist_tec9.glb",
+      "skins": [
+        {
+          "paintkit_id": 235,
+          "name": "VariCamo",
+          "rarity": "Classified",
+          "texture_webp": "weapon_tec9_235.webp"
+        },
+        {
+          "paintkit_id": 374,
+          "name": "Toxic",
+          "rarity": "Classified",
+          "texture_webp": "weapon_tec9_374.webp"
+        }
+      ]
+    },
+    {
+      "id": "ump45",
+      "name": "ump45",
+      "model": "cs2_all_weapons/weapons/models/ump45/weapon_smg_ump45.glb",
+      "skins": [
+        {
+          "paintkit_id": 37,
+          "name": "Blaze",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ump45_37.webp"
+        },
+        {
+          "paintkit_id": 851,
+          "name": "Moonrise",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ump45_851.webp"
+        },
+        {
+          "paintkit_id": 1194,
+          "name": "K.O. Factory",
+          "rarity": "Classified",
+          "texture_webp": "weapon_ump45_1194.webp"
+        }
+      ]
+    },
+    {
+      "id": "usp_silencer",
+      "name": "usp_silencer",
+      "model": "cs2_all_weapons/weapons/models/usp_silencer/weapon_pist_usp_silencer.glb",
+      "skins": [
+        {
+          "paintkit_id": 318,
+          "name": "Road Rash",
+          "rarity": "Classified",
+          "texture_webp": "weapon_usp_silencer_318.webp"
+        },
+        {
+          "paintkit_id": 489,
+          "name": "Torque",
+          "rarity": "Classified",
+          "texture_webp": "weapon_usp_silencer_489.webp"
+        },
+        {
+          "paintkit_id": 637,
+          "name": "Cyrex",
+          "rarity": "Classified",
+          "texture_webp": "weapon_usp_silencer_637.webp"
+        },
+        {
+          "paintkit_id": 653,
+          "name": "Neo-Noir",
+          "rarity": "Classified",
+          "texture_webp": "weapon_usp_silencer_653.webp"
+        },
+        {
+          "paintkit_id": 705,
+          "name": "Cortex",
+          "rarity": "Classified",
+          "texture_webp": "weapon_usp_silencer_705.webp"
+        },
+        {
+          "paintkit_id": 796,
+          "name": "Check Engine",
+          "rarity": "Classified",
+          "texture_webp": "weapon_usp_silencer_796.webp"
+        },
+        {
+          "paintkit_id": 817,
+          "name": "Flashback",
+          "rarity": "Classified",
+          "texture_webp": "weapon_usp_silencer_817.webp"
+        },
+        {
+          "paintkit_id": 1186,
+          "name": "PC-GRN",
+          "rarity": "Classified",
+          "texture_webp": "weapon_usp_silencer_1186.webp"
+        }
+      ]
+    },
+    {
+      "id": "xm1014",
+      "name": "xm1014",
+      "model": "cs2_all_weapons/weapons/models/xm1014/weapon_shot_xm1014.glb",
+      "skins": [
+        {
+          "paintkit_id": 654,
+          "name": "Seasons",
+          "rarity": "Classified",
+          "texture_webp": "weapon_xm1014_654.webp"
+        },
+        {
+          "paintkit_id": 970,
+          "name": "Entombed",
+          "rarity": "Classified",
+          "texture_webp": "weapon_xm1014_970.webp"
+        },
+        {
+          "paintkit_id": 1182,
+          "name": "Mockingbird",
+          "rarity": "Classified",
+          "texture_webp": "weapon_xm1014_1182.webp"
+        }
+      ]
+    },
+    {
+      "id": "negev",
+      "name": "Negev",
+      "model": "cs2_all_weapons/weapons/models/negev/weapon_mach_negev.glb",
+      "skins": []
+    },
+    {
+      "id": "m249",
+      "name": "M249",
+      "model": "cs2_all_weapons/weapons/models/m249/weapon_mach_m249.glb",
+      "skins": []
+    },
+    {
+      "id": "bayonet",
+      "name": "Bayonet",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_bayonet/weapon_knife_bayonet.glb",
+      "skins": [
+        {"paintkit_id": 415, "texture_webp": "/webp/weapon_bayonet_415.webp"},
+        {"paintkit_id": 416, "texture_webp": "/webp/weapon_bayonet_416.webp"},
+        {"paintkit_id": 417, "texture_webp": "/webp/weapon_bayonet_417.webp"},
+        {"paintkit_id": 418, "texture_webp": "/webp/weapon_bayonet_418.webp"},
+        {"paintkit_id": 419, "texture_webp": "/webp/weapon_bayonet_419.webp"},
+        {"paintkit_id": 420, "texture_webp": "/webp/weapon_bayonet_420.webp"},
+        {"paintkit_id": 421, "texture_webp": "/webp/weapon_bayonet_421.webp"},
+        {"paintkit_id": 568, "texture_webp": "/webp/weapon_bayonet_568.webp"},
+        {"paintkit_id": 569, "texture_webp": "/webp/weapon_bayonet_569.webp"},
+        {"paintkit_id": 570, "texture_webp": "/webp/weapon_bayonet_570.webp"},
+        {"paintkit_id": 571, "texture_webp": "/webp/weapon_bayonet_571.webp"},
+        {"paintkit_id": 572, "texture_webp": "/webp/weapon_bayonet_572.webp"}
+      ]
+    },
+    {
+      "id": "knife_kukri",
+      "name": "Kukri",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_kukri/weapon_knife_kukri.glb",
+      "skins": []
+    },
+    {
+      "id": "knife_navaja",
+      "name": "Navaja",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_navaja/weapon_knife_navaja.glb",
+      "skins": []
+    },
+    {
+      "id": "knife_talon",
+      "name": "Talon",
+      "model": "cs2_all_weapons/weapons/models/knife/knife_talon/weapon_knife_talon.glb",
+      "skins": []
+    }
+  ]
+}
